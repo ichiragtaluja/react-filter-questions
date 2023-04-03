@@ -23,7 +23,7 @@ export function DisplayProducts({ products }) {
       />
       <ol>
         {displayProducts.map(({ id, name, price, category }) => (
-          <li>
+          <li key={id}>
             <h3>{name}</h3>
             <p>Rs: {price}</p>
             <p>{category}</p>
