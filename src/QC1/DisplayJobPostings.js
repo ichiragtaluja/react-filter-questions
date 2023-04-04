@@ -1,17 +1,18 @@
 import { useState } from "react";
 
 export function DisplayJobPostings({ jobPostings }) {
-  const [selectedJobType, setSelectedJobType] = useState([]);
-
+  // const [selectedJobType, setSelectedJobType] = useState([]);
+  const [rerenderer, setRerenderer] = useState(false);
+  const selectedJobType = [];
   const checkHandler = (event) => {
     const jobSelected = event.target.value;
     const isChecked = event.target.checked;
-    console.log(isChecked);
+    // console.log(isChecked);
 
     if (isChecked) {
-      setSelectedJobType([...selectedJobType, jobSelected]);
+      selectedJobType = [...selectedJobType, jobSelected];
     } else {
-      setSelectedJobType(selectedJobType.filter((c) => c !== jobSelected));
+      selectedJobType(selectedJobType.filter((c) => c !== jobSelected));
     }
   };
 
