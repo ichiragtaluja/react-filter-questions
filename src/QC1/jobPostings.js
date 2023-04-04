@@ -1,0 +1,42 @@
+export const jobPostings = [
+  {
+    id: 1,
+    company: "ABC Company",
+    jobTitle: "Software Engineer",
+    location: "San Francisco, CA",
+    salary: "$120,000 - $140,000",
+    jobType: "full-time",
+  },
+  {
+    id: 2,
+    company: "XYZ Corporation",
+    jobTitle: "Front-End Developer",
+    location: "New York, NY",
+    salary: "$100,000 - $120,000",
+    jobType: "part-time",
+  },
+  {
+    id: 3,
+    company: "Acme Inc.",
+    jobTitle: "Project Manager",
+    location: "Austin, TX",
+    salary: "$80,000 - $100,000",
+    jobType: "contract",
+  },
+  {
+    id: 4,
+    company: "Globex Corporation",
+    jobTitle: "Data Analyst",
+    location: "Seattle, WA",
+    salary: "$90,000 - $110,000",
+    jobType: "full-time",
+  },
+  {
+    id: 5,
+    company: "Initech",
+    jobTitle: "UI/UX Designer",
+    location: "Los Angeles, CA",
+    salary: "$110,000 - $130,000",
+    jobType: "part-time",
+  },
+];
